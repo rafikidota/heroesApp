@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   login() {
     this.authService.login()
       .subscribe(auth => {
-        console.log(auth);
         if (auth.id) {
           this.router.navigate(['./heroes']);
         }
