@@ -43,11 +43,5 @@ export class AuthGuard implements CanActivate, CanLoad {
           }
         })
       );
-    /*  if (this.authService.auth.id) {
-       return true;
-     }
-     console.log('Bloqueado por el AuthGuard - CanLoad');
- 
-     return false; */
   }
 }
